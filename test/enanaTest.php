@@ -50,7 +50,11 @@ class EnanaTest extends TestCase
     {
         #Se probará el efecto de administrar una pócima a una Enana muerta pero con una vida mayor que -10 y menor que 0
         #Se tendrá que probar que la vida es mayor que 0 y que su situación ha cambiado a viva
-
+        $enana = new Enana("koala-san",5);
+        $enana->heridaLeve();
+        $enana->pocima();
+        $this->assertEquals("viva", $enana->getSituacion());
+        $this->assertGreaterThan(0, $enana->getPuntosVida());
     }
 
     public function testPocimaNoRevive()
