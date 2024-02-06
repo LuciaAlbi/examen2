@@ -13,7 +13,7 @@ class Enana
         #Deberás de completar situación dependiendo de puntosVida.
         $this->nombre = $a1;
         $this->puntosVida = $a2;
-        $this->situacion = "muerta";
+        $this->situacion = "viva";
     }
 
     public function heridaLeve()
