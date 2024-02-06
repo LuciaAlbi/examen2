@@ -25,7 +25,6 @@ class EnanaTest extends TestCase
 
     }
 
-    }
 
     public function testHeridaLeveMuere()
     {
